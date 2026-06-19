@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f3ee" />
+    <title>숙소 이용 안내 | 공개용</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="숙소 이용 안내 처음으로">
+        <span class="brand-mark" aria-hidden="true">🏡</span>
+        <span>
+          <strong>숙소 이용 안내</strong>
+          <small>강풀만화거리 근처의 따뜻한 하루</small>
+        </span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Guest Guide · Welcome</p>
+          <h1 id="page-title">편안한 머무름을 위한 숙소 안내</h1>
+          <p>체크인부터 주변 산책 코스까지, 필요한 순간에 살짝 열어보는 작은 안내서예요.</p>
+        </div>
+        <div class="quick-panel" aria-label="빠른 확인">
+          <a href="#wifi" class="quick-item">
+            <span class="emoji" aria-hidden="true">📶</span>
+            <span>Wi-Fi</span>
+          </a>
+          <a href="#emergency" class="quick-item">
+            <span class="emoji" aria-hidden="true">🧯</span>
+            <span>비상</span>
+          </a>
+          <a href="#trash" class="quick-item">
+            <span class="emoji" aria-hidden="true">♻️</span>
+            <span>쓰레기</span>
+          </a>
+          <a href="#nearby" class="quick-item">
+            <span class="emoji" aria-hidden="true">☕</span>
+            <span>주변</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="tools" aria-label="안내 검색">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input id="guide-search" type="search" placeholder="필요한 내용을 검색하세요" autocomplete="off" />
+        </label>
+        <button class="text-button" type="button" id="expand-all">전체 펼치기</button>
+      </section>
+
+      <section class="notice-grid" aria-label="중요 안내">
+        <article class="notice">
+          <strong>🔑 체크인</strong>
+          <p>도어락 비밀번호는 체크인 1시간 전에 전송됩니다.</p>
+        </article>
+        <article class="notice">
+          <strong>🚗 주차</strong>
+          <p>건물 주차장 1대 가능, 1분 거리에 공영주차장이 있습니다.</p>
+        </article>
+        <article class="notice">
+          <strong>🛁 온수</strong>
+          <p>보일러를 켜면 보통 2분 안에 온수가 나옵니다.</p>
+        </article>
+      </section>
+
+      <section class="guide-list" aria-label="숙소 상세 안내">
+        <details class="guide-card" open data-tags="입실 퇴실 체크인 체크아웃 도어락 주차 짐 보관">
+          <summary>
+            <span class="section-number">01</span>
+            <span>🔑 입·퇴실</span>
+          </summary>
+          <div class="content">
+            <dl>
+              <div>
+                <dt>도어락 사용법</dt>
+                <dd>체크인 1시간 전 비밀번호를 전송해드립니다.</dd>
+              </div>
+              <div>
+                <dt>주차 안내</dt>
+                <dd>건물 주차장에 1대 주차가 가능합니다. 주차장 앞 도로에도 주차가 유연한 편이며, 1분 거리에 공영주차장도 있습니다.</dd>
+              </div>
+              <div>
+                <dt>짐 보관</dt>
+                <dd>기본적으로 제공하지 않습니다.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" open id="wifi" data-tags="와이파이 wifi 에어컨 보일러 온수 리모콘 시설">
+          <summary>
+            <span class="section-number">02</span>
+            <span>📶 기본 시설 사용법</span>
+          </summary>
+          <div class="content">
+            <div class="wifi-box">
+              <div>
+                <span class="label">Wi-Fi</span>
+                <strong>체크인 메시지를 확인해주세요</strong>
+              </div>
+            </div>
+            <p class="helper">Wi-Fi 이름과 비밀번호는 체크인 메시지로 별도 안내드립니다. 공유기는 침실 2에 위치해있습니다.</p>
+            <dl>
+              <div>
+                <dt>에어컨</dt>
+                <dd>침실1과 거실에 위치해 있으며, 리모콘으로 조작 가능합니다.</dd>
+              </div>
+              <div>
+                <dt>보일러</dt>
+                <dd>안방에 있는 중앙 조절 장치로 조작되며, 온수 사용시 필히 작동해야 합니다.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" data-tags="욕실 화장실 온수 환풍기 세면대 하수구 변기 물티슈">
+          <summary>
+            <span class="section-number">03</span>
+            <span>🛁 욕실</span>
+          </summary>
+          <div class="content">
+            <dl>
+              <div>
+                <dt>온수 나오는 데 걸리는 시간</dt>
+                <dd>보일러를 켠 경우, 2분 안에 온수가 나옵니다. 온수가 나오지 않을 경우 보일러 작동 여부를 확인해주세요.</dd>
+              </div>
+              <div>
+                <dt>욕실 환풍기</dt>
+                <dd>욕실 스위치를 켜면 자동으로 작동됩니다. 다만 습도 조절을 위해 창문을 활용하기를 추천드립니다.</dd>
+              </div>
+              <div>
+                <dt>세면대 물빠짐 주의사항</dt>
+                <dd>휴지 외 이물질을 세면대, 하수구와 변기에 넣지 않도록 유의해주세요. 물티슈와 음식물은 넣지 말아주세요.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" data-tags="주방 식기 조리도구 수저 그릇 와인잔 컵 냉장고 쓰레기 음식물">
+          <summary>
+            <span class="section-number">04</span>
+            <span>🍽️ 주방</span>
+          </summary>
+          <div class="content">
+            <dl>
+              <div>
+                <dt>식기·조리도구</dt>
+                <dd>주방 싱크대 가운데 하부장 각 서랍에 수저, 그릇, 조리도구가 들어 있습니다. 각 서랍에 이름이 붙어 있습니다. 접시 및 와인잔, 컵 등은 상부장에 진열되어 있습니다.</dd>
+              </div>
+              <div>
+                <dt>냉장고</dt>
+                <dd>자유롭게 사용 가능합니다. 다만 음식물을 넣어 더러워지지 않도록 배려 부탁드립니다.</dd>
+              </div>
+              <div>
+                <dt>쓰레기</dt>
+                <dd>싱크대 옆 두 개의 쓰레기통에는 각각 일반쓰레기와 재활용쓰레기를 버리실 수 있습니다. 구분해서 버려주시면 체크아웃 후 분리배출하겠습니다.</dd>
+              </div>
+              <div>
+                <dt>음식물 처리 주의사항</dt>
+                <dd>싱크대 오른쪽 하부장에 밀폐가 가능한 음식물쓰레기통이 있습니다. 싱크대에 음식물을 흘려버려 배관이 막히지 않도록 유의 부탁드립니다.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" id="trash" data-tags="분리수거 쓰레기 재활용 일반 음식물 종량제 배출 장박 담아내다덮밥">
+          <summary>
+            <span class="section-number">05</span>
+            <span>♻️ 분리수거 & 쓰레기</span>
+          </summary>
+          <div class="content">
+            <dl>
+              <div>
+                <dt>분리수거 방법</dt>
+                <dd>한국에서는 재활용이 가능한 종이, PET, 캔 등의 재활용쓰레기와 재활용이 불가능한 일반쓰레기, 음식물쓰레기로 구분하여 배출합니다.</dd>
+              </div>
+              <div>
+                <dt>장박 손님 배출 안내</dt>
+                <dd>직접 쓰레기 배출이 필요하신 경우 일반쓰레기와 음식물쓰레기를 배출하기 위한 종량제 봉투를 별도 문의해주세요. 재활용쓰레기와 종량제봉투에 담긴 일반쓰레기 및 음식물쓰레기는 1층 '담아내다덮밥' 옆 공간에 배출합니다.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" id="emergency" data-tags="비상 안전 소화기 화재경보기 누전차단기 가스밸브 복층 옥상 응급 연락처 112 119 호스트">
+          <summary>
+            <span class="section-number">06</span>
+            <span>🧯 비상·안전</span>
+          </summary>
+          <div class="content">
+            <p class="soft-note">긴급 상황에서는 112(범죄신고), 119(응급구조) 또는 체크인 메시지로 별도 전달된 호스트 연락처로 연락해주세요.</p>
+            <dl>
+              <div>
+                <dt>소화기</dt>
+                <dd>입구 계단 아래에 위치해 있으며, 각 방과 거실에는 화재경보기가 설치되어 있습니다.</dd>
+              </div>
+              <div>
+                <dt>누전차단기</dt>
+                <dd>신발장 옆 우드장 왼쪽 문을 열면 위쪽 칸 안쪽에 위치해 있습니다. 필요시에만 작동해주세요.</dd>
+              </div>
+              <div>
+                <dt>가스 밸브 위치</dt>
+                <dd>가스렌지 옆에 위치해 있습니다.</dd>
+              </div>
+              <div>
+                <dt>복층 출입 금지</dt>
+                <dd>복층 옥탑방 및 옥상은 현재 사용하지 않는 공간입니다. 안전을 위해 출입을 금하며, 계단 및 복층 이용으로 인한 사고는 숙소에서 책임지지 않습니다.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" data-tags="소모품 비품 수건 화장지 휴지 욕실 수건장">
+          <summary>
+            <span class="section-number">07</span>
+            <span>🧺 소모품 & 비품</span>
+          </summary>
+          <div class="content">
+            <dl>
+              <div>
+                <dt>수건 및 여분 화장지</dt>
+                <dd>욕실 내 수건장에 비치되어 있습니다.</dd>
+              </div>
+              <div>
+                <dt>부족할 때</dt>
+                <dd>필요한 물품이 부족할 경우 별도 문의해주세요.</dd>
+              </div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="guide-card" data-tags="생활 규칙 소음 금연 흡연 반려동물 애완동물">
+          <summary>
+            <span class="section-number">08</span>
+            <span>🌙 생활 규칙</span>
+          </summary>
+          <div class="content">
+            <ul class="rules">
+              <li>늦은 시간에는 이웃을 배려하여 소음을 자제해주세요.</li>
+              <li>객실 내 흡연은 절대 금지입니다.</li>
+              <li>반려동물은 동반하실 수 없습니다.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="guide-card" id="nearby" data-tags="주변 편의시설 시장 편의점 마트 약국 맛집 카페 성내전통시장 GS25 이마트 스타약국 김치돼학교 담아내다덮밥 탁이담 승룡이네집 주가네쌀떡볶이 래빗도넛">
+          <summary>
+            <span class="section-number">09</span>
+            <span>☕ 주변 편의시설</span>
+          </summary>
+          <div class="content">
+            <div class="place-list">
+              <a href="https://map.naver.com/p/search/%EC%84%B1%EB%82%B4%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5" target="_blank" rel="noreferrer"><strong>성내전통시장</strong><span>도보 1분</span></a>
+              <a href="https://map.naver.com/p/search/GS25%20%EC%B2%9C%ED%98%B8%EC%98%9B%EA%B8%B8%EC%A0%90" target="_blank" rel="noreferrer"><strong>GS25 천호옛길점</strong><span>도보 3분, 서울 강동구 천호옛12길 55</span></a>
+              <a href="https://map.naver.com/p/search/%EC%9D%B4%EB%A7%88%ED%8A%B8%20%EC%B2%9C%ED%98%B8%EC%A0%90" target="_blank" rel="noreferrer"><strong>이마트 천호점</strong><span>도보 10분, 천호역 5번출구</span></a>
+              <a href="https://map.naver.com/p/search/%EC%8A%A4%ED%83%80%EC%95%BD%EA%B5%AD%2002-470-7904" target="_blank" rel="noreferrer"><strong>스타약국</strong><span>일요일 영업 약국, 02-470-7904</span></a>
+            </div>
+            <h2>근처 맛집·카페</h2>
+            <div class="place-list">
+              <a href="https://map.naver.com/p/search/%EA%B9%80%EC%B9%98%EB%8F%BC%ED%95%99%EA%B5%90" target="_blank" rel="noreferrer"><strong>김치돼학교</strong><span>같은 건물 1층, 김치찌개</span></a>
+              <a href="https://map.naver.com/p/search/%EB%8B%B4%EC%95%84%EB%82%B4%EB%8B%A4%EB%8D%AE%EB%B0%A5" target="_blank" rel="noreferrer"><strong>담아내다덮밥</strong><span>같은 건물 1층, 덮밥</span></a>
+              <a href="https://map.naver.com/p/search/%ED%83%81%EC%9D%B4%EB%8B%B4%20%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C162%EA%B0%80%EA%B8%B8%203" target="_blank" rel="noreferrer"><strong>탁이담</strong><span>맑은 곰탕. 다인원은 예약 권장, 0507-1359-8617</span></a>
+              <a href="https://map.naver.com/p/search/%EC%8A%B9%EB%A3%A1%EC%9D%B4%EB%84%A4%EC%A7%91%20%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C168%EA%B0%80%EA%B8%B8%2065-29" target="_blank" rel="noreferrer"><strong>승룡이네집</strong><span>만화책을 즐길 수 있는 카페</span></a>
+              <a href="https://map.naver.com/p/search/%EC%A3%BC%EA%B0%80%EB%84%A4%EC%8C%80%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EC%B2%9C%ED%98%B8%EC%98%9B%EA%B8%B8%2090" target="_blank" rel="noreferrer"><strong>주가네쌀떡볶이</strong><span>깔끔하게 매운 소스와 노란밥 조합 추천</span></a>
+              <a href="https://map.naver.com/p/search/%EB%9E%98%EB%B9%97%EB%8F%84%EB%84%9B%20%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C168%EA%B0%80%EA%B8%B8%2051" target="_blank" rel="noreferrer"><strong>래빗도넛</strong><span>트렌디한 도넛, 포실한 스타일</span></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="guide-card" data-tags="호스트 연락 문제 해결 전화 문자 sms 에어비앤비 메시지 문의">
+          <summary>
+            <span class="section-number">10</span>
+            <span>💬 호스트 연락 & 문제 해결</span>
+          </summary>
+          <div class="content">
+            <p class="soft-note">호스트 연락처는 체크인 메시지로 별도 전달드립니다.</p>
+            <p>비상 상황의 경우 별도 전달된 연락처로 전화주세요. 그 외 일상적인 문의는 오전 9시부터 오후 7시까지 에어비앤비 메시지 또는 문자로 보내주시면 가능한 빠르게 답신드리겠습니다.</p>
+          </div>
+        </details>
+      </section>
+
+      <p class="empty" id="empty-state" hidden>검색 결과가 없습니다.</p>
+    </main>
+
+    <footer>
+      <p>즐거운 시간 보내세요. 필요한 내용은 검색하거나 각 섹션을 펼쳐 확인하실 수 있습니다. ✨</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
