@@ -93,7 +93,8 @@ input {
 
 .quick-item,
 .text-button,
-.copy-button {
+.copy-button,
+.language-switcher button {
   min-height: 44px;
   border-radius: 8px;
   text-decoration: none;
@@ -109,6 +110,38 @@ svg {
   stroke-linejoin: round;
   stroke-width: 2;
   flex: 0 0 auto;
+}
+
+.language-switcher {
+  position: sticky;
+  top: 67px;
+  z-index: 9;
+  display: flex;
+  gap: 8px;
+  width: min(960px, calc(100% - 32px));
+  margin: 12px auto 0;
+  padding: 8px;
+  overflow-x: auto;
+  background: rgba(255, 253, 248, 0.92);
+  border: 1px solid rgba(222, 216, 204, 0.82);
+  border-radius: 8px;
+  backdrop-filter: blur(14px);
+}
+
+.language-switcher button {
+  flex: 1 0 auto;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  background: var(--brand);
+  color: #fff;
 }
 
 main {
