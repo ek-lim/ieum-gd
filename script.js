@@ -189,6 +189,26 @@ const translations = {
     zh: "通过主卧内的中央控制器操作。使用热水时请务必开启。",
     ja: "主寝室にある中央コントローラーで操作します。お湯を使う時は必ず作動させてください。",
   },
+  "헤어드라이어": {
+    en: "Hair Dryer",
+    zh: "吹风机",
+    ja: "ヘアドライヤー",
+  },
+  "헤어드라이어는 침실1 협탁에 비치되어 있습니다.": {
+    en: "The hair dryer is in the bedside table in Bedroom 1.",
+    zh: "吹风机放在卧室1的床头柜里。",
+    ja: "ヘアドライヤーは寝室1のサイドテーブルにあります。",
+  },
+  "세탁기·건조기": {
+    en: "Washer & Dryer",
+    zh: "洗衣机与烘干机",
+    ja: "洗濯機・乾燥機",
+  },
+  "세탁기와 건조기를 사용하실 수 있습니다. 세탁기는 'AI 맞춤세탁' 모드 사용을 권장드립니다.": {
+    en: "You may use the washer and dryer. For the washer, we recommend using the 'AI Custom Wash' mode.",
+    zh: "您可以使用洗衣机和烘干机。洗衣机建议使用“AI 맞춤세탁”模式。",
+    ja: "洗濯機と乾燥機をご利用いただけます。洗濯機は「AI 맞춤세탁」モードの使用をおすすめします。",
+  },
   "🛁 욕실": {
     en: "🛁 Bathroom",
     zh: "🛁 浴室",
